@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão</title>
+</head>
+<body>
+    
+    <script>
+        var n1 = Number(window.prompt('Digite um Número'))
+        document.write(`Conversão decimal ${n1.toFixed(2)} <br>`)
+        document.write(`Replace ${n1.toFixed(2).replace('.',',')} <br>`)
+        document.write(`Moeda Brasileira: ${n1.toLocaleString('pt-br' , {style: 'currency' , currency: 'BRL'})} <br>`)
+        document.write(`Moeda Brasileira: ${n1.toLocaleString('pt-br' , {style: 'currency' , currency: 'USD'})}`)
+
+
+    </script>
+</body>
+</html>
