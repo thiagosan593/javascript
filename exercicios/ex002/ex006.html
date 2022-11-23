@@ -17,12 +17,30 @@
     <h1>Estudos de DOM </h1>
     <P>Aqui vai o resultado</P>
     <p>Apredendo a usar <strong>DOM </strong>em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg" name ='msg1' >Clique em mim</div>
     <script>
       //  window.document.write(window.document.URL) */
+      var corpo  = window.document.body
       var  p1 = window.document.getElementsByTagName('p')[1];
-      window.document.write('Está excrito assim: ' + p1.innerText )
-      p1.style.color= 'blue'
+      var d = window.document.getElementById('msg')
+      d.style.background = 'green'
+      /* modificação de texto*/
+
+      //d.innerText = 'Estou agurdando ...'
+      //window.document.getElementById('msg').innerText = 'Teste'
+
+      window.document.write('Está excrito assim: ' + p1.innerText +' <br> <br>' )
+      p1.style.color= 'red'
+        corpo.style.background = 'blue'
+        //copia o texto
+        document.write(p1.innerText + '<br>')
+        document.aler(p1.innerText + '<br>')
+        // copia o html com as tags filha
+        document.write(p1.innerHTML)
+
+        var d = window.document.getElementsByName('msg1')[0]
+        d.innerText = 'Teste2'
+
     </script>
 </body>
 </html>
