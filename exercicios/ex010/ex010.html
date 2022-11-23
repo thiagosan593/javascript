@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        body {
+            background-color: lightgray;
+
+        }
+
+        div {
+            margin: auto;
+            width: 300px;
+            background-color: lightskyblue;
+            margin-bottom: 6px;
+            border: 3px solid rgba(13, 13, 248, 0.548);
+            border-radius: 6px;
+            text-align: center;
+        }
+        div > p{
+            font-weight: bolder;
+            font-size: 30px;
+            padding: 0px;
+            margin: 0px;
+            font: bolder;
+            text-align: center;
+        }
+        div#resul {
+            background-color: lightskyblue;
+            text-align: center;
+            width: 310x;
+            line-height: 80px;
+            font-size: 20px;
+        }
+
+        input {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        input.submit {
+            width: 270px;
+            background-color: black;
+            color: white;
+
+        }
+        input.submit:hover{
+            background-color: rgb(29, 26, 26);
+            font-size: large;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Somando Valores</h1>
+        <label for="n01">Número 01</label>
+        <input type="number" id="n01" name="n01"> 
+        <label for="n02">Número 02</label>
+        <input type="number" id="n02" name="n02"> 
+        <input class="submit" type="submit" value="Somar" onclick="somar()">
+    </div>
+    <div id="resul">
+        Resultado
+    </div>
+    <script>
+        function somar() {
+            var n01 = window.document.getElementById('n01')
+            var n02 = window.document.getElementById('n02')
+            var resul = window.document.getElementById('resul')
+            var n1 = Number(n01.value)
+            var n2 = Number(n02.value)
+            var s = n1 + n2
+            resul.innerText = `A soma entre os números é: ${s}`
+            resul.style.fontSize = '20px'
+        }
+            </script>
+
+
+</body>
+
+</html>
