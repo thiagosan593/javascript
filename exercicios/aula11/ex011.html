@@ -37,8 +37,8 @@
         <h1>Sistema de Multas</h1>
         <p>
             <label for="txtvel">Velocidade</label>
-            <input type="text" name="txtvel" id="txtvel">
-            <input type="button" value="Verificar" onclick="verificar()">
+            <input type="text" name="txtvel" id="txtvel" min="0">
+            <input type="button" value="Verificar"  onclick="verificar()">
         </p>
         <p id="resul">
             
@@ -46,7 +46,7 @@
     </div>
     <script>
         function verificar() {
-            var text = window.document.getElementById('txtvel')
+            var text = window.document.getElementById('txtvel').value
             var resul = window.document.getElementById('resul')
             var km = Number(text.value)
             resul.innerHTML = `<P>Sua Velocidade atual é de <strong> ${km} km/h </strong</p> `
