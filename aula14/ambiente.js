@@ -1,6 +1,9 @@
-for(let i=1;i<=10;i++){
+console.log('Inicio')
+for(var i=1;i<=4;i++){
     console.log (`Teste ${i}`)
 }
+console.log('Fim')
+
 /*var c=1
 do{
     console.log(`Teste ${c}`)
