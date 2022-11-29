@@ -15,3 +15,9 @@ console.log('FOR IN')
 for(let i in num){
     console.log(`Número na posição ${i} tem o valor ${num[i]}`)
 }
+ let pos = num.indexOf(300)
+ if(pos == - 1){
+    console.log("O valor não foi encontrado")
+ }else{
+    console.log(`O Valor 5 está na posição ${pos}`)
+ }
